@@ -642,6 +642,15 @@ require('lazy').setup({
           },
         },
         bashls = {},
+        nil_ls = {
+          settings = {
+            ['nil'] = {
+              formatting = {
+                command = { 'nixfmt' },
+              },
+            },
+          },
+        },
       }
 
       -- Ensure the servers and tools above are installed
